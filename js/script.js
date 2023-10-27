@@ -1,7 +1,7 @@
 let userFirstName = prompt('Enter your first name').trim();
 let userSecondName = prompt('Enter your second name').trim();
-let userEmail = prompt('Enter your email').replace(' ', '').toLowerCase();
-let userBornDate = prompt('Enter your born date').replace(' ', '');
+let userEmail = prompt('Enter your email').replaceAll(' ', '').toLowerCase();
+let userBornDate = prompt('Enter your born date').replaceAll(' ', '');
 
 userFirstName =
   userFirstName[0].toUpperCase() + userFirstName.slice(1).toLowerCase();
